@@ -8,6 +8,9 @@ def writeYourNumber():
         guess = input('Угадай число: ')
         try:
             guess = int(guess)
+            if guess < 0 or guess > 100:
+                print('Извините, но у нас диапазон от 0 до 100!')
+                continue
             break           
         except:
             print('Введено не число, попробуй снова!')
