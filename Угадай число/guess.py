@@ -38,3 +38,4 @@ while True:
         break
 
 print(f'Общее колиство попыток = {countChoices}')
+input()
