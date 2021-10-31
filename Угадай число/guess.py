@@ -3,6 +3,7 @@ import random
 
 
 def writeYourNumber():
+    """Проверка ввода числа игрока"""
     guess = ''
     while True:
         guess = input('Угадай число: ')
@@ -21,7 +22,7 @@ def writeYourNumber():
 myName = input('Привет, как тебя зовут?\n~')
 number = random.randint(1, 100)
 countChoices = 0
-print(f'Что ж, {myName} я загадываю число от 1 до 100!')
+print(f'Что ж, {myName} я загадываю число от 0 до 100!')
 
 while True:
     choice = writeYourNumber()
